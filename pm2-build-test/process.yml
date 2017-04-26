@@ -1,0 +1,7 @@
+apps:
+  - script   : './app.js'
+    instances: 1
+    exec_mode: 'cluster'
+    log_date_format: 'YYYY-MM-DD HH:mm Z'
+    out_file : 'logs/pm2/out.log'
+    error_file: 'logs/pm2/err.log'
