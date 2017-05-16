@@ -42,3 +42,14 @@ docker build -t your_app_image .
 ```
 docker run -itd -p 3000:3000 --name app your_app_image
 ```
+
+## Actions
+
+Monitoring CPU/Usage of each process
+$ docker exec -it <container_id> pm2 monit
+Listing managed processes
+$ docker exec -it <container_id> pm2 list
+Get more information about a process
+$ docker exec -it <container_id> pm2 show <app_name>
+0sec downtime reload all applications
+$ docker exec -it <container_id> pm2 reload all
