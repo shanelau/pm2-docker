@@ -4,7 +4,10 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "docker": "docker build -t your_app_image .",
+    "dockerrun": "docker run -itd -p 3000:3000 --name app your_app_image"
   },
   "author": "",
   "license": "ISC"

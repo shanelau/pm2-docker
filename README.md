@@ -9,6 +9,8 @@
 
 ## Build your image base on `pm2-docker`
 
+example: https://github.com/shanelau/pm2-docker/tree/master/pm2-build-test
+
 ### 1. Create Dockerfile
 
 ```
@@ -38,5 +40,5 @@ docker build -t your_app_image .
 ### Run app
 
 ```
-docker run -itd -p 3000:3000 --name app -v /home/logs:/www/log your_app_image
+docker run -itd -p 3000:3000 --name app your_app_image
 ```
