@@ -34,3 +34,9 @@ apps:
 ```
 docker build -t your_app_image .
 ```
+
+### Run app
+
+```
+docker run -itd -p 3000:3000 --name app -v /home/logs:/www/log your_app_image
+```
