@@ -1,0 +1,19 @@
+{
+  "name": "pm2-docker",
+  "version": "1.0.0",
+  "description": "run pm2 with docker user entry point",
+  "main": "index.js",
+  "scripts": {
+    "docker": "docker build -t hub.docker.com/r/shanelau/pm2:latest ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shanelau/pm2-docker.git"
+  },
+  "author": "shanelau<shanelau1021@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shanelau/pm2-docker/issues"
+  },
+  "homepage": "https://github.com/shanelau/pm2-docker#readme"
+}
