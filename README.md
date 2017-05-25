@@ -14,9 +14,7 @@ example: https://github.com/shanelau/pm2-docker/tree/master/pm2-build-test
 ### 1. Create Dockerfile
 
 ```
-FROM shanelau/pm2:latest
-ADD . /www
-CMD ['process.yml']
+FROM shanelau/pm2-docker:latest
 ```
 
 ### 2. Create pm2 config file `process.yml`
@@ -27,8 +25,8 @@ apps:
     instances: 1
     exec_mode: 'cluster'
     log_date_format: 'YYYY-MM-DD HH:mm Z'
-    out_file : 'logs/pm2/out.log'
-    error_file: 'logs/pm2/err.log'
+    out_file : 'logs/out.log'
+    error_file: 'logs/err.log'
 ```
 
 ### 3. Docker build
@@ -41,6 +39,11 @@ docker build -t your_app_image .
 
 ```
 docker run -itd -p 3000:3000 --name app your_app_image
+```
+### then
+
+```
+curl http://127.0.0.1:3000
 ```
 
 ## Actions

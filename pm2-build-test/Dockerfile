@@ -1,1 +1,1 @@
-FROM hub.docker.com/r/shanelau/pm2
+FROM hub.docker.com/r/shanelau/pm2-docker
