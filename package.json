@@ -1,10 +1,10 @@
 {
-  "name": "pm2-docker",
+  "name": "node-debian",
   "version": "1.0.0",
   "description": "run pm2 with docker user entry point",
   "main": "index.js",
   "scripts": {
-    "docker": "docker build --compress -t hub.c.163.com/yddocker/pm2:latest ."
+    "docker": "docker build --compress -t hub.docker.com/r/shanelau/node-debian:latest . && docker push hub.docker.com/r/shanelau/node-debian:latest"
   },
   "repository": {
     "type": "git",
