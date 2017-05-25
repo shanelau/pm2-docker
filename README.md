@@ -48,6 +48,7 @@ curl http://127.0.0.1:3000
 
 ## Actions
 
+```
 Monitoring CPU/Usage of each process
 $ docker exec -it <container_id> pm2 monit
 Listing managed processes
@@ -56,3 +57,5 @@ Get more information about a process
 $ docker exec -it <container_id> pm2 show <app_name>
 0sec downtime reload all applications
 $ docker exec -it <container_id> pm2 reload all
+
+```
