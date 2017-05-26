@@ -14,7 +14,7 @@ example: https://github.com/shanelau/pm2-docker/tree/master/pm2-build-test
 ### 1. Create Dockerfile
 
 ```
-FROM shanelau/pm2-docker:latest
+FROM shanelau/pm2-docker:1.0-onbuild
 ```
 
 ### 2. Create pm2 config file `process.yml`
