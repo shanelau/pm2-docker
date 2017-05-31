@@ -1,1 +1,1 @@
-FROM hub.docker.com/r/shanelau/pm2-docker
+FROM hub.docker.com/r/shanelau/pm2-docker:1.0-onbuild

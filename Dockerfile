@@ -1,6 +1,6 @@
 FROM debian:latest
 LABEL MAINTAINER shanelau1021@gmail.com
-ENV LANG en_US.UTF-8
+# ENV LANG en_US.UTF-8
 ENV TZ Asia/Shanghai
 ENV NODE_VERSION 7.10.0
 

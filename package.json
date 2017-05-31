@@ -4,7 +4,7 @@
   "description": "run pm2 with docker user entry point",
   "main": "index.js",
   "scripts": {
-    "docker": "docker build --compress -t hub.docker.com/r/shanelau/pm2-docker:latest . && docker push hub.docker.com/r/shanelau/pm2-docker:latest"
+    "docker": "docker build --compress -t hub.docker.com/r/shanelau/pm2-docker:1.0-onbuild ."
   },
   "repository": {
     "type": "git",
